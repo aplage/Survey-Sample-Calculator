@@ -194,8 +194,6 @@ shinyServer(
                                       lwd = 2, col = simcolor[i])
                         }
                         points(input$expprev / 100, sss, pch = 19, cex = 1.5, col = "red")
-                        
-                        
                         title(main = "Effects of Margin of Error and Prevalence",  font.main = 2, 
                               cex.main = 1.75, col.main = c("navyblue"),# title.adj = 0.5,
                               xlab = "Prevalence",  font.lab = 2, cex.lab = 1.5,col.lab = c("blue"),
