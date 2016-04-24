@@ -46,7 +46,7 @@ shinyServer(
                 output$marginoferrorBox <- renderValueBox({
                         valueBox(
                                 input$me, 
-                                "Margin of Error", 
+                                "Margin of Error      ", 
                                 icon = icon("percent"),
                                 color = "blue"
                         )
@@ -62,7 +62,7 @@ shinyServer(
                 output$populationBox <- renderValueBox({
                         valueBox(
                                 input$pop,
-                                "Population", 
+                                "Population            ", 
                                 icon = icon("hashtag"),
                                 color = "blue"
                         )
@@ -73,7 +73,7 @@ shinyServer(
                                                  p = input$expprev / 100,
                                                  c = input$me / 100,
                                                  pop = as.numeric(input$pop)),
-                                "Sample Size", 
+                                "Sample Size               ", 
                                 icon = icon("calculator"),
                                 color = "green"
                         )
@@ -125,7 +125,7 @@ shinyServer(
                         }
                         points(input$expprev / 100, sss, pch = 19, cex = 1.5, col = "red")
                         title(main = "Effects of Confidence Interval and Prevalence",  font.main = 2, 
-                              cex.main = 1.75, col.main = c("navyblue"), #title.adj = 0.5,
+                              cex.main = 1.4, col.main = c("navyblue"), #title.adj = 0.5,
                               xlab = "Prevalence",  font.lab = 2, cex.lab = 1.5,col.lab = c("blue"),
                               ylab = "Sample Size",  font.lab = 2, cex.lab = 1.5,col.lab = c("blue"))
                         axis(1, at = seq(0, 1, 0.1), 
@@ -195,7 +195,7 @@ shinyServer(
                         }
                         points(input$expprev / 100, sss, pch = 19, cex = 1.5, col = "red")
                         title(main = "Effects of Margin of Error and Prevalence",  font.main = 2, 
-                              cex.main = 1.75, col.main = c("navyblue"),# title.adj = 0.5,
+                              cex.main = 1.4, col.main = c("navyblue"),# title.adj = 0.5,
                               xlab = "Prevalence",  font.lab = 2, cex.lab = 1.5,col.lab = c("blue"),
                               ylab = "Sample Size",  font.lab = 2, cex.lab = 1.5,col.lab = c("blue"))
                         axis(1, at = seq(0, 1, 0.1), 

@@ -81,7 +81,6 @@ shinyUI(
                                                         br(),
                                                         h2("References Tab"),
                                                         h4("It shows the reference used for the calculations."),
-                                                        
                                                         width = 12, status = "info", solidHeader = TRUE,
                                                         title = "Instructions"
                                                 )
